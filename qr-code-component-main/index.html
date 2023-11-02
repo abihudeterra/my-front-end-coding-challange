@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        background-color: rgba(173, 232, 252, 0.678);
+      }
+      .card-parent {
+        width: 400px;
+        padding: 20px;
+        background-color: aliceblue;
+        height: 100%;
+        overflow: hidden;
+        flex-wrap: wrap;
+        box-shadow: 1px 0 10px #2222229f;
+        border-radius: 15px;
+        margin: 20px;
+      }
+      img {
+        width: 100%;
+        margin: 0%;
+        object-fit: cover;
+      }
+      .card-title {
+        font-family: Arial;
+        font-size: 16px;
+        margin: 0;
+        padding: 2px;
+        text-align: center;
+        font-weight: 900;
+      }
+      .card-title > h1 {
+        margin: 0%;
+        padding: 0%;
+        font-size: 28px;
+        text-transform: capitalize;
+      }
+      .card-title-sub {
+        font-family: Arial;
+        color: rgba(160, 160, 160, 0.959);
+        text-transform: capitalize;
+        text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        .card-parent {
+          width: 300px;
+          margin-top: 30%;
+        }
+        .card-title > h1 {
+          font-size: 20px;
+          font-family: Arial;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .card-parent {
+          margin-top: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-parent">
+      <img src="images/image-qr-code.png" alt="" />
+      <div class="card-title">
+        <h1>improve your front-end skill by building project</h1>
+      </div>
+      <div class="card-title-sub">
+        <p>
+          scan the code to visit front-ent mentor and take your code skill to
+          the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
